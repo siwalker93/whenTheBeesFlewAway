@@ -89,7 +89,7 @@ body {
 /* Jaerens CSS
 -------------------------------------------------- */
 
-nav div {
+ul.navbar-nav div {
     padding: 30px;
     background-color: red;
     margin-top: 10px;
