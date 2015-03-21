@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html data-ng-app="filmApp">
+<head>
+    <title>AngularJS Template</title>
+    <link href="content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/css/site.css" rel="stylesheet" />
+    <link href="content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="content/css/social-buttons.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" data-ng-controller="indexController">
+        <div class="container">
+            This is the navbar
+        </div>
+    </div>
+        <div class="container">
+            <div class="page-header text-center">
+                <h1>AngularJS Template</h1>
+            </div>
+        </div>
+
+    <div class="container">
+        <div data-ng-view="">
+        </div>
+    </div>
+
+    <hr />
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    This is the footer
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3rd party libraries -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
+
+    <!-- Load app main script -->
+    <script src="app/app.js?v=2"></script>
+    <!-- Load controllers -->
+    <script src="app/controllers/indexController.js?v=2"></script>
+    <script src="app/controllers/homeController.js?v=2"></script>
+    <!-- Load custom filters -->
+    <!-- Load custom directives -->
+
+</body>
+</html>
