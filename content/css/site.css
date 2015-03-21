@@ -1,4 +1,4 @@
-﻿/* Title Cards
+/* Title Cards
 -------------------------------------------------- */
 .carousel .item {
     width: 100%; /*slider width*/
@@ -7,6 +7,7 @@
 .carousel .item img {
     width: 100%; /*img width*/
 }
+
 /*full width container*/
 @media (max-width: 767px) {
     .block {
@@ -85,3 +86,11 @@ body {
         border-top-right-radius: 0;
     }
 
+/* Jaerens CSS
+-------------------------------------------------- */
+
+nav div {
+    padding: 30px;
+    background-color: red;
+    margin-top: 10px;
+}
