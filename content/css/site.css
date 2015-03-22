@@ -51,10 +51,14 @@ html {
 }
 
 body {
+<<<<<<< Updated upstream
     /* Margin bottom by footer height */
     margin-bottom: 60px;
   xpadding-bottom: 10px;
   font-family: 'Dosis', sans-serif;
+=======
+
+>>>>>>> Stashed changes
 }
 
 
@@ -107,8 +111,16 @@ body {
 /* Jaerens CSS
 -------------------------------------------------- */
 
-ul.navbar-nav div {
-    padding: 30px;
-    background-color: red;
+ul.navbar-nav img {
     margin-top: 10px;
+}
+
+.navbar-collapse {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div.tab {
+    background-image: url("../img/centre-boxes/centre-box-1170.png");
+    overflow: hidden;
 }

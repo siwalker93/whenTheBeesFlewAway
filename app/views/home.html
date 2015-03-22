@@ -1,30 +1,41 @@
+<div id = "maincontent" ng-style = "getBackgroundImage()">
+
 <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">{{currentTab}}</div>
-    <div class="col-md-2"></div>
+    <div class="col-md-7 col-md-offset-3">
+    <img src = "content/img/headers/project-header-1170.png" width = 100% ng-hide = "isCurrentTab('home')"> 
+    </div>
 </div>
 
 <div class="row">
    <div class = "col-md-3" ng-include = "'app/views/nav.html'"> </div>     
+    
     <div class="col-md-7" id = "content">
         
-        <div id = "homeContent" ng-hide = "isCurrentTab('home')" ></div>
+        <div id = "homeContent" ng-show = "isCurrentTab('home')" > 
+            
+            <img ng-src = "content/img/centre-boxes/home.png" width = 100% /> 
         
-        <div id = "projectContent" ng-show = "isCurrentTab('project')" ng-include = "'app/views/project.html'"></div>
+        </div>
         
-        <div id = "filmContent" ng-show = "isCurrentTab('film')" ng-include = "'app/views/film.html'"></div>
-        
-        <div id = "peopleContent" ng-show = "isCurrentTab('people')" ng-include = "'app/views/people.html'"></div>
-        
-        <div id = "beesContent" ng-show = "isCurrentTab('bees')" ng-include = "'app/views/bees.html'"></div>
-        
-        <div id = "pledgeContent" ng-show = "isCurrentTab('pledge')" ng-include = "'app/views/pledge.html'"></div>
+    <div class = "tab" id = "projectContent" ng-show = "isCurrentTab('project')" ng-include = "'app/views/project.html'"> </div>
+            
+    <div class = "tab" id = "filmContent" ng-show = "isCurrentTab('film')" ng-include = "'app/views/film.html'"> </div>
+            
+    <div class = "tab" id = "peopleContent" ng-show = "isCurrentTab('people')" ng-include = "'app/views/people.html'"></div>
+            
+    <div class = "tab" id = "beesContent" ng-show = "isCurrentTab('bees')" ng-include = "'app/views/bees.html'"></div>
 
+    <div class = "tab" id = "pledgeContent" ng-show = "isCurrentTab('pledge')" ng-include = "'app/views/pledge.html'"></div>
+        
     </div>
     <div class="col-md-2" id = "social">
     
     </div>
 </div>
+    
+</div>
+
+
     
 
 
