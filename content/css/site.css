@@ -7,6 +7,19 @@
 .carousel .item img {
     width: 100%; /*img width*/
 }
+.tc_text {
+      margin-bottom: -121px;
+      width: 600px;
+      position: absolute;
+      bottom: 25%;
+      left: 50%;
+      margin-left: -300px;
+      text-align: center;
+      z-index: 15;
+}
+.tc_text p {
+    margin-top: 35%;
+}
 
 /*full width container*/
 @media (max-width: 767px) {
@@ -71,6 +84,10 @@ body {
 =======
 
 >>>>>>> Stashed changes
+}
+
+h1, p {
+    font-family: 'Dosis', sans-serif;
 }
 
 
