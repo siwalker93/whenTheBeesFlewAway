@@ -5,70 +5,31 @@
 </div>
 
 <div class="row">
-        
-    <nav class="navbar col-md-2">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <img src = "content/img/social-icons/nav-bar-icon.png"/>
-      </button>
-    </div>
-        
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-            <div ng-click = "changeTab('project')" ng-hide = "isCurrentTab('project')"> Project </div>
-            <div ng-click = "changeTab('film')" ng-hide = "isCurrentTab('film')"> Film </div>
-            <div ng-click = "changeTab('people')" ng-hide = "isCurrentTab('people')"> People </div>
-            <div ng-click = "changeTab('bees')" ng-hide = "isCurrentTab('bees')"> Bees </div>
-            <div ng-click = "changeTab('pledge')" ng-hide = "isCurrentTab('pledge')"> Pledge </div>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+   <div class = "col-md-2" ng-include = "'app/views/nav.html'"> </div>     
+    
     <div class="col-md-8" id = "content">
-        <div id = "homeContent" ng-hide = "isCurrentTab('home')">
-            
+        
+        <div id = "homeContent" ng-hide = "isCurrentTab('home')" > 
+        
         </div>
         
-         <div id = "projectContent" ng-show = "isCurrentTab('project')">
-             
-             <div class = "col-md-1"> </div>
-             
-             <div class = "col-md-10"> 
-                 
-                 <div class = "videocontainer"> 
-                     
-                <iframe src="https://player.vimeo.com/video/119744218" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/119744218">Boobs.</a> from <a href="https://vimeo.com/user6133617">Stefano Colferai</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-                     
-                 </div>
-                 
-                 <div class = "textcontainer"> 
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere tortor sed dictum dictum. Morbi mattis pharetra sodales. Vestibulum tincidunt purus vitae justo aliquet, a luctus ex scelerisque. Sed vel quam eget arcu cursus volutpat a id risus. Quisque ornare nec lorem a tempor. Nunc ut neque nec sapien ornare auctor at eu arcu. Donec molestie quis turpis id posuere. Sed vulputate tristique odio at condimentum. Curabitur iaculis, nulla sed molestie venenatis, nibh purus blandit felis, sit amet ultrices orci sapien a justo.
-
-Integer nec libero rutrum, aliquet quam ut, malesuada mi. Proin in arcu nunc. Donec auctor dolor sed ornare fringilla. Morbi at tristique tellus, eu congue ante. Sed auctor mi ac eleifend sodales. Nam massa nibh, laoreet nec convallis quis, congue et ante. Donec posuere diam at leo rutrum, sit amet fringilla arcu tincidunt. Morbi sodales felis ac ex efficitur, sed cursus enim pharetra.
-                 </div>
-                 
-             </div>
-             
-                <div class = "col-md-1"> </div>
+         <div id = "projectContent" ng-show = "isCurrentTab('project')" ng-include = "'app/views/project.html'">
              
         </div>
         
-         <div id = "filmContent" ng-show = "isCurrentTab('film')">
+         <div id = "filmContent" ng-show = "isCurrentTab('film')" ng-include = "'app/views/film.html'">
         
         </div>
         
-         <div id = "peopleContent" ng-show = "isCurrentTab('people')">
+         <div id = "peopleContent" ng-show = "isCurrentTab('people')" ng-include = "'app/views/people.html'">
         
         </div>
         
-         <div id = "beesContent" ng-show = "isCurrentTab('bees')">
+         <div id = "beesContent" ng-show = "isCurrentTab('bees')" ng-include = "'app/views/bees.html'">
         
         </div>
         
-        <div id = "pledgeContent" ng-show = "isCurrentTab('pledge')">
+        <div id = "pledgeContent" ng-show = "isCurrentTab('pledge')" ng-include = "'app/views/pledge.html'">
         
         </div>
     </div>
@@ -76,22 +37,6 @@ Integer nec libero rutrum, aliquet quam ut, malesuada mi. Proin in arcu nunc. Do
     
     </div>
 </div>
-<!--  
-navbar
-    home
-        -image
-    project
-        -video
-        -text
-    film
-        -text
-        -image
-        -video
-    people
-        -image, image, image
-    bees
-    pledge
--->
     
 
 
