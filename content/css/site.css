@@ -26,6 +26,23 @@
     background-color: blue;
 }
 
+/* People
+-------------------------------------------------- */
+.people {
+    text-align: center;
+}
+
+.people h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.people p {
+
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -37,6 +54,7 @@ body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
   xpadding-bottom: 10px;
+  font-family: 'Dosis', sans-serif;
 }
 
 

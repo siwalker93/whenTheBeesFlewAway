@@ -5,33 +5,21 @@
 </div>
 
 <div class="row">
-   <div class = "col-md-2" ng-include = "'app/views/nav.html'"> </div>     
-    
-    <div class="col-md-8" id = "content">
+   <div class = "col-md-3" ng-include = "'app/views/nav.html'"> </div>     
+    <div class="col-md-7" id = "content">
         
-        <div id = "homeContent" ng-hide = "isCurrentTab('home')" > 
+        <div id = "homeContent" ng-hide = "isCurrentTab('home')" ></div>
         
-        </div>
+        <div id = "projectContent" ng-show = "isCurrentTab('project')" ng-include = "'app/views/project.html'"></div>
         
-         <div id = "projectContent" ng-show = "isCurrentTab('project')" ng-include = "'app/views/project.html'">
-             
-        </div>
+        <div id = "filmContent" ng-show = "isCurrentTab('film')" ng-include = "'app/views/film.html'"></div>
         
-         <div id = "filmContent" ng-show = "isCurrentTab('film')" ng-include = "'app/views/film.html'">
+        <div id = "peopleContent" ng-show = "isCurrentTab('people')" ng-include = "'app/views/people.html'"></div>
         
-        </div>
+        <div id = "beesContent" ng-show = "isCurrentTab('bees')" ng-include = "'app/views/bees.html'"></div>
         
-         <div id = "peopleContent" ng-show = "isCurrentTab('people')" ng-include = "'app/views/people.html'">
-        
-        </div>
-        
-         <div id = "beesContent" ng-show = "isCurrentTab('bees')" ng-include = "'app/views/bees.html'">
-        
-        </div>
-        
-        <div id = "pledgeContent" ng-show = "isCurrentTab('pledge')" ng-include = "'app/views/pledge.html'">
-        
-        </div>
+        <div id = "pledgeContent" ng-show = "isCurrentTab('pledge')" ng-include = "'app/views/pledge.html'"></div>
+
     </div>
     <div class="col-md-2" id = "social">
     
