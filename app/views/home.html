@@ -7,8 +7,8 @@
 </div>
 
 <div class="row">
-   <div class = "col-md-3" ng-include = "'app/views/nav.html'"> </div>     
-    
+    <div class = "col-md-3" ng-include = "'app/views/nav.html'"> </div>     
+
     <div class="col-md-7" id = "content">
         
         <div id = "homeContent" ng-show = "isCurrentTab('home')" > 
@@ -28,9 +28,9 @@
     <div class = "tab" id = "pledgeContent" ng-show = "isCurrentTab('pledge')" ng-include = "'app/views/pledge.html'"></div>
         
     </div>
-    <div class="col-md-2" id = "social">
     
-    </div>
+    <div class="col-md-2" ng-include = "'app/views/social.html'"></div>
+    
 </div>
     
 </div>
