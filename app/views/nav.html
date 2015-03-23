@@ -1,19 +1,29 @@
 <nav class="navbar">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items">
           <img src = "content/img/social-icons/nav-bar-icon.png"/>
       </button>
     </div>
         
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="navbar-items">
       <ul class="nav navbar-nav text-center">
-            <img ng-click = "changeTab('project')" ng-hide = "isCurrentTab('project')"ng-src = "content/img/nav-bar/project.png" />
-            <img ng-click = "changeTab('film')" ng-hide = "isCurrentTab('film')" ng-src = "content/img/nav-bar/film.png"/>
-            <img ng-click = "changeTab('people')" ng-hide = "isCurrentTab('people')" ng-src = "content/img/nav-bar/people.png"/>
-            <img ng-click = "changeTab('bees')" ng-hide = "isCurrentTab('bees')" ng-src = "content/img/nav-bar/bees.png"/>
-            <img ng-click = "changeTab('pledge')" ng-hide = "isCurrentTab('pledge')" ng-src = "content/img/nav-bar/pledge.png"/>
+          <div class = "navbox " ng-click = "changeTab('project')" ng-hide = "isCurrentTab('project')">
+              Project
+          </div>
+        <div class = "navbox" ng-click = "changeTab('film')" ng-hide = "isCurrentTab('film')">
+              Film
+          </div>
+        <div class = "navbox" ng-click = "changeTab('people')" ng-hide = "isCurrentTab('people')">
+              People
+          </div>
+            <div class = "navbox" ng-click = "changeTab('bees')" ng-hide = "isCurrentTab('bees')">
+              Bees
+          </div>
+        <div class = "navbox" ng-click = "changeTab('pledge')" ng-hide = "isCurrentTab('pledge')">
+              Pledge
+          </div>
       </ul>
     </div><!-- /.navbar-collapse -->
 </nav>

@@ -76,14 +76,10 @@ html {
 }
 
 body {
-<<<<<<< Updated upstream
     /* Margin bottom by footer height */
     margin-bottom: 60px;
   xpadding-bottom: 10px;
   font-family: 'Dosis', sans-serif;
-=======
-
->>>>>>> Stashed changes
 }
 
 h1, p {
@@ -112,9 +108,9 @@ h1, p {
     margin: 0 auto;
 }
 
-    .form-login .form-login-heading {
+.form-login .form-login-heading {
         margin-bottom: 10px;
-    }
+}
 
     .form-login .form-control {
         position: relative;
@@ -140,8 +136,10 @@ h1, p {
 /* Jaerens CSS
 -------------------------------------------------- */
 
-ul.navbar-nav img {
-    margin-top: 10px;
+div#topbanner{
+    background-image: url("../img/headers/header-1170.png");
+    text-align: center;
+    padding: 30px;
 }
 
 .navbar-collapse {
@@ -149,7 +147,49 @@ ul.navbar-nav img {
     padding-right: 0px;
 }
 
+div.navbox{
+    background-image: url("../img/nav-bar/nav-button-1170.png");
+    padding: 40px 80px 40px 80px;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
 div.tab {
     background-image: url("../img/centre-boxes/centre-box-1170.png");
     overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+@media (max-width: 767px) {
+   .navbar-collapse {
+       max-height: none;
+       max-width: none;
+   }
+    
+    .navbox{
+        width: 80%;  
+    }
+    
+    .navbar-nav {
+   margin: 0px 0px;
+    }
 }

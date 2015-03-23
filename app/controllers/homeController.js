@@ -14,15 +14,6 @@ app.controller('homeController', ['$scope', function ($scope) {
     backgroundImagePaths["bees"] = "content/img/backgrounds/paper-texture.png";
     backgroundImagePaths["pledge"] = "content/img/backgrounds/paper-texture.png";
     
-    var headerImagePaths = {};
-    headerImagePaths["home"] = "content/img/headers/project-header-1170.png";
-    headerImagePaths["project"] = "content/img/headers/project-header-1170.png";
-    headerImagePaths["film"] = "content/img/headers/project-header-1170.png";
-    headerImagePaths["people"] = "content/img/headers/project-header-1170.png";
-    headerImagePaths["bees"] = "content/img/headers/project-header-1170.png";
-    headerImagePaths["pledge"] = "content/img/headers/project-header-1170.png";
-    
-    
     
     $scope.changeTab = function(tabName){
         $scope.currentTab = tabName;
@@ -30,6 +21,10 @@ app.controller('homeController', ['$scope', function ($scope) {
     
     $scope.isCurrentTab = function(tabName){
         return $scope.currentTab == tabName;
+    }
+    
+    $scope.currentTabCapital = function(){
+        return $scope.currentTab.charAt(0).toUpperCase() + $scope.currentTab.slice(1)
     }
     
     $scope.getBackgroundImage = function(){
