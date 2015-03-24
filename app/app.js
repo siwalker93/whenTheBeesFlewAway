@@ -1,5 +1,5 @@
 
-var app = angular.module('filmApp', ['ngRoute']);
+var app = angular.module('filmApp', ['ngRoute', 'ngAnimate']);
 
 app.config(function ($routeProvider) {
 
