@@ -33,3 +33,21 @@ app.controller('homeController', ['$scope', function ($scope) {
                 'background-rep': 'no-repeat'};
     }
 }]);
+
+$(window).on('load', function(){
+    checkDataToggle();
+});
+
+$(window).on('resize', function(event){
+    checkDataToggle();
+});
+
+function checkDataToggle(){
+    var windowWidth = $(window).width();
+    if(windowWidth < 992){
+        $(".navbox").attr('data-toggle', 'collapse');
+    }
+    else{
+        $(".navbox").removeAttr('data-toggle');
+    }
+}
