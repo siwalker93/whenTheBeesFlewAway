@@ -167,6 +167,10 @@ div.tab {
     .collapsing {
         overflow: hidden!important;
     }
+    .nav{
+        float:left!important;  
+        width: 100%!important;
+    }
 }
 
 @media (max-width: 767px) {
@@ -175,8 +179,8 @@ div.tab {
        max-width: none;
    }
     
-    .navbox{
-        width: 80%;  
+    .nav{
+        float:left;   
     }
     
     .navbar-nav {
@@ -223,5 +227,11 @@ div.social-icon{
   opacity: 0;
   top: -100px;
   height: 0px;
+}
+
+.nav{
+    margin: auto;
+  float: none;
+  width: 200px;
 }
 
