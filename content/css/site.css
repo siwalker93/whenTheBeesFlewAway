@@ -68,6 +68,16 @@
     padding-bottom: 10px;
 }
 
+#twitter-widget-0{
+    border: 1px solid green !important;
+}
+
+@media screen and (max-width: 991px) {
+    #twitter-widget-0{
+         display: none !important;
+    }
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {

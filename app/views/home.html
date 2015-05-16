@@ -15,9 +15,11 @@
     
     <div class="col-md-7" id = "content">
         
-        <div id = "homeContent" ng-show = "isCurrentTab('home')" > 
+        <div id = "homeContent" ng-show = "isCurrentTab('home')" style = "text-align:right"s > 
             
             <img ng-src = "content/img/centre-boxes/home.png" width = 100% /> 
+            
+            <img ng-src = "content/img/centre-boxes/kickstarter.png" width = 30% style = "position: relative; bottom: 40px;" /> 
         
         </div>
         
@@ -28,8 +30,6 @@
     <div class = "tab" id = "peopleContent" ng-show = "isCurrentTab('people')" ng-include = "'app/views/people.html'"></div>
             
     <div class = "tab" id = "beesContent" ng-show = "isCurrentTab('bees')" ng-include = "'app/views/bees.html'"></div>
-
-    <div class = "tab" id = "pledgeContent" ng-show = "isCurrentTab('pledge')" ng-include = "'app/views/pledge.html'"></div>
         
     </div>
     

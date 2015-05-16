@@ -33,11 +33,6 @@ app.controller('homeController', ['$scope', function ($scope) {
                 724: "content/img/backgrounds/paper-texture.png",
                 940: "content/img/backgrounds/paper-texture.png",
                 1170: "content/img/backgrounds/paper-texture.png"
-                },
-                pledge : { 
-                724: "content/img/backgrounds/paper-texture.png",
-                940: "content/img/backgrounds/paper-texture.png",
-                1170: "content/img/backgrounds/paper-texture.png"
                 }
     }
     
