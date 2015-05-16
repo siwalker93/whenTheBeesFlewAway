@@ -15,9 +15,56 @@
     
     <div class="col-md-7" id = "content">
         
-        <div id = "homeContent" ng-show = "isCurrentTab('home')" style = "text-align:right"s > 
+        <div id = "homeContent" ng-show = "isCurrentTab('home')" style = "text-align:right" >
             
-            <img ng-src = "content/img/centre-boxes/home.png" width = 100% /> 
+            <style>
+            
+                #mainimage{
+                    background: url(content/img/centre-boxes/homescreen-1170.png);
+                    background-size: 100%; 
+                    height: 500px; 
+                    background-repeat: no-repeat;"
+                }
+                
+                #mainimage h2, #mainimage h3 {
+                    position: relative; 
+                    top: 50%; 
+                    text-align:center;
+                }
+                
+                #mainimage h2{
+                    font-size: 32px;   
+                }
+                
+                #mainimage h3{
+                    font-size: 18px;   
+                }
+                
+                
+    @media screen and (max-width: 650px) {
+        #mainimage {
+            height: 300px;
+        }
+        
+        #mainimage h2{
+            font-size: 22px;   
+        }
+                
+        #mainimage h3{
+            font-size: 12px;   
+        }
+    }
+            
+            </style>
+            
+            <div id = "mainimage">
+            
+                <h2> WHEN ALL THE BEES FLEW AWAY</h2>
+                <h3> A Film By Connor Pearce</h3>
+            
+            </div>
+            
+<!--            <img ng-src = "content/img/centre-boxes/home.png" width = 100% vertical-align: center/> -->
             
             <img ng-src = "content/img/centre-boxes/kickstarter.png" width = 30% style = "position: relative; bottom: 40px;" /> 
         

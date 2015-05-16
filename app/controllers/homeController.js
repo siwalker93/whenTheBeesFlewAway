@@ -74,7 +74,8 @@ app.controller('homeController', ['$scope', function ($scope) {
         }
         
         return {'background-image': 'url("' + $scope.backgroundImage + '")',
-                'background-repeat': 'no-repeat'};
+                'background-repeat': 'no-repeat',
+               'background-size': '100%'};
     }
 }]);
 
