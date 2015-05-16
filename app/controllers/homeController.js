@@ -5,14 +5,54 @@ app.controller('homeController', ['$scope', function ($scope) {
     
     //ng-src = "{{backgroundImagePaths[currentTab]}}"
     
+    $scope.backgroundImage;
+    
     //What background image should be shown for each tab
-    var backgroundImagePaths = {};
-    backgroundImagePaths["home"] = "content/img/backgrounds/paper-texture.png";
-    backgroundImagePaths["project"] = "content/img/backgrounds/project-background-1170.png";
-    backgroundImagePaths["film"] = "content/img/backgrounds/paper-texture.png";
-    backgroundImagePaths["people"] = "content/img/backgrounds/paper-texture.png";
-    backgroundImagePaths["bees"] = "content/img/backgrounds/paper-texture.png";
-    backgroundImagePaths["pledge"] = "content/img/backgrounds/paper-texture.png";
+    var backgroundImagePaths = {
+                home : { 
+                724: "content/img/backgrounds/paper-texture.png",
+                940: "content/img/backgrounds/paper-texture.png",
+                1170: "content/img/backgrounds/paper-texture.png"
+                },
+                project : { 
+                724: "content/img/backgrounds/project-background-1170.png",
+                940: "content/img/backgrounds/project-background-1170.png",
+                1170: "content/img/backgrounds/project-background-1170.png"
+                },
+                film : { 
+                724: "content/img/backgrounds/film-background-724.png",
+                940: "content/img/backgrounds/film-background-940.png",
+                1170: "content/img/backgrounds/film-background-1170.png"
+                },
+                people : { 
+                724: "content/img/backgrounds/people-background-1170.png",
+                940: "content/img/backgrounds/people-background-1170.png",
+                1170: "content/img/backgrounds/people-edit-1170.png"
+                },
+                bees : { 
+                724: "content/img/backgrounds/paper-texture.png",
+                940: "content/img/backgrounds/paper-texture.png",
+                1170: "content/img/backgrounds/paper-texture.png"
+                },
+                pledge : { 
+                724: "content/img/backgrounds/paper-texture.png",
+                940: "content/img/backgrounds/paper-texture.png",
+                1170: "content/img/backgrounds/paper-texture.png"
+                }
+    }
+    
+    window.onresize = function() {
+  if (window.innerWidth >= 992) { 
+            $scope.backgroundImage = backgroundImagePaths[$scope.currentTab][1170];
+        }
+        else if (window.innerWidth >= 768) {  
+            $scope.backgroundImage = backgroundImagePaths[$scope.currentTab][940];
+        }
+        else if (window.innerWidth < 768) { 
+            $scope.backgroundImage = backgroundImagePaths[$scope.currentTab][724];
+        }
+        $scope.$apply();
+    }
     
     
     $scope.changeTab = function(tabName){
@@ -28,9 +68,18 @@ app.controller('homeController', ['$scope', function ($scope) {
     }
     
     $scope.getBackgroundImage = function(){
-        var imagePath = backgroundImagePaths[$scope.currentTab];
-        return {'background-image': 'url("' + imagePath + '")',
-                'background-rep': 'no-repeat'};
+        if (window.innerWidth >= 992) { 
+            $scope.backgroundImage = backgroundImagePaths[$scope.currentTab][1170];
+        }
+        else if (window.innerWidth >= 768) {  
+            $scope.backgroundImage = backgroundImagePaths[$scope.currentTab][940];
+        }
+        else if (window.innerWidth < 768) { 
+            $scope.backgroundImage = backgroundImagePaths[$scope.currentTab][724];
+        }
+        
+        return {'background-image': 'url("' + $scope.backgroundImage + '")',
+                'background-repeat': 'no-repeat'};
     }
 }]);
 
