@@ -6,9 +6,14 @@
 }
 .carousel .item img {
     width: 100%; /*img width*/
+    min-height:900px;
+    min-width: 1200px; 
 }
+.tc_text h1 {
+    letter-spacing: 3px;
+}
+
 .tc_text {
-      margin-bottom: -121px;
       width: 600px;
       position: absolute;
       bottom: 25%;
@@ -32,9 +37,34 @@
     display: none
 }
 
+/* Mobile
+-------------------------------------------------- */
+@media (max-width: 1200px) {
+    .carousel {
+        display: none;
+    }
+    .small_display_splash{
+        display:block;
+      /*  height: 1000px;*/
+        background-color: #000;
+        color: #FFF;
+        text-align: center;
+    }
+    .small_display_splash span{
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+    } 
+    .small_display_splash h1{
+        margin: 5px;
+        vertical-align: middle;
+        display: inline-block;
+        letter-spacing: 3px; 
+    }
+}
 /* Main Content
 -------------------------------------------------- */
-.main_content{
+.main_conte
     height:2000px;
     background-color: blue;
 }
@@ -59,15 +89,9 @@
 
 /* Social
 -------------------------------------------------- */
-.social-media ul{
-    list-style-type: none;
-    padding-top: 15px;
+.social_media {
+    margin-top: 30px;
 }
-
-.social-media li{
-    padding-bottom: 10px;
-}
-
 #twitter-widget-0{
     margin-top: 30px !important;
     border: 1px solid green !important;
@@ -77,6 +101,10 @@
     #twitter-widget-0{
          display: none !important;
     }
+
+    .social_media {
+        margin-top: 10px;
+    }
 }
 
 /* Sticky footer styles
@@ -84,6 +112,7 @@
 html {
     position: relative;
     min-height: 100%;
+    letter-spacing: 2px;
 }
 
 body {
@@ -151,6 +180,7 @@ div#topbanner{
     filter: alpha(opacity=70); 
     text-align: center;
     padding: 30px;
+    font-size: 50px;
 }
 
 .navbar-collapse {
@@ -204,7 +234,7 @@ div.tab {
 }
 
 div.social-icon{
-    margin-top: 20px; 
+    margin-top: 4px; 
 }
 
 /* NavBar animation */
@@ -243,7 +273,8 @@ padding: 0px 60px 0px 60px;
 .nav{
     float: none;
     width: 200px;
-  margin: auto;
+    margin: auto;
+    font-size: 21px;
 }
 
 div.social-icon{
