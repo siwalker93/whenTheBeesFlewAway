@@ -5,6 +5,8 @@ app.controller('homeController', ['$scope', function ($scope) {
     
     //ng-src = "{{backgroundImagePaths[currentTab]}}"
     
+    document.getElementById('maincontent').style.height = window.innerHeight + 'px';
+    
     $scope.backgroundImage;
     
     //What background image should be shown for each tab
@@ -85,6 +87,7 @@ $(window).on('load', function(){
 
 $(window).on('resize', function(event){
     checkDataToggle();
+    document.getElementById('maincontent').style.height = window.innerHeight + 'px';
 });
 
 function checkDataToggle(){

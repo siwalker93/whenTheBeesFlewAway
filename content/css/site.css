@@ -1,5 +1,9 @@
 /* Title Cards
 -------------------------------------------------- */
+
+.container-fluid {
+    padding: 0px;   
+}
 .carousel .item {
     width: 100%; /*slider width*/
     max-height: 1080px; /*slider height*/
@@ -97,14 +101,12 @@
     border: 1px solid green !important;
 }
 
-@media screen and (max-width: 991px) {
-    #twitter-widget-0{
-         display: none !important;
+@media screen and (min-width: 991px) {
+    .social_media{
+        padding-left: 0px;
+         padding-right: 40px;
     }
-
-    .social_media {
-        margin-top: 10px;
-    }
+    
 }
 
 /* Sticky footer styles
@@ -215,6 +217,7 @@ div.tab {
         float:left!important;  
         width: 100%!important;
     }
+    
 }
 
 @media (max-width: 767px) {
@@ -246,8 +249,8 @@ div.social-icon{
     margin: 10px 0px 10px 0px;
     text-align: center;
     cursor: pointer;
-  -webkit-transition: 0.5s linear all;
-  transition: 0.5s linear all;
+  -webkit-transition: 1.5s linear all;
+  transition: 1.5s linear all;
 }
 
 .navbox.ng-hide-add, .my-elm.ng-hide-remove {
@@ -279,4 +282,20 @@ padding: 0px 60px 0px 60px;
 
 div.social-icon{
     text-align: center;   
+}
+
+@media screen and (max-width: 991px) {
+    #twitter-widget-0{
+         display: none !important;
+    }
+
+    .social_media {
+        margin-top: 10px;
+    }
+    
+            .navbox{
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+    
 }
